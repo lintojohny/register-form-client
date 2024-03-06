@@ -27,4 +27,4 @@ This repository contains the front-end implementation for a user registration fo
 ## Tools Used
 
 - **React:** v18.2
-- **Jest:** Test framework
+- **vitest:** Test framework

@@ -1,10 +1,25 @@
-import React from "react";
-import { describe, test, expect } from "vitest";
+import { describe, test, expect, beforeAll, vi } from "vitest";
 import { render, screen, act, waitFor } from "@testing-library/react";
 import Register from "../Register";
 import userEvent from "@testing-library/user-event";
 
 describe("render register", () => {
+  
+  beforeAll(() => {
+    Object.defineProperty(window, "matchMedia", {
+      writable: true,
+      value: vi.fn().mockImplementation((query) => ({
+        matches: false,
+        media: query,
+        onchange: null,
+        addListener: vi.fn(),
+        removeListener: vi.fn(),
+        addEventListener: vi.fn(),
+        removeEventListener: vi.fn(),
+        dispatchEvent: vi.fn(),
+      })),
+    });
+  });
   test("loads and displays regiser component", async () => {
     // ARRANGE
     render(<Register />);
