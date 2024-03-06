@@ -1,0 +1,37 @@
+body {
+  line-height: normal;
+  font-family: var(--font-lato), var(--input-label);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+:root {
+  /* fonts */
+  --font-lato: Lato;
+  --input-label: Roboto;
+
+  /* font sizes */
+  --input-label-size: 16px;
+  --font-size-lg: 18px;
+  --font-size-xs: 12px;
+
+  /* Colors */
+  --grey-1: #fff;
+  --teal: #4790a1;
+  --outline: #A5B6CD;
+  --color-indianred: #cf4055;
+  --text-2: #4d5c6f; 
+  --text: #2c3642;
+  --grey-7: #333;
+  --support-support-01: #da1e28;
+
+
+  /* Border radiuses */
+  --br-6: 6px;
+  --br-4: 4px;
+  --br-1: 4px;
+}
+
+  
